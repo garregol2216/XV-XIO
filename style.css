@@ -358,6 +358,26 @@ h2 { font-size: 1.8rem; margin-bottom: 20px; }
 /* --- 11. RESPONSIVE --- */
 /* --- AJUSTE DEFINITIVO PARA CELULAR --- */
 @media (max-width: 600px) {
+    /* ... otros estilos del celu ... */
+
+    .dress-card {
+        padding: 20px 10px !important; /* Menos espacio interno para que el texto quepa */
+        width: 95%; /* Que la carta ocupe casi todo el ancho del celu */
+    }
+
+    .dress-type {
+        font-size: 1.4rem !important; /* Más chico para que entre en el celu */
+        line-height: 1.2 !important;
+        display: block !important;
+    }
+
+    /* Esto asegura que el paréntesis no se corte en el celular */
+    .dress-type span, .dress-type small {
+        font-size: 1rem !important; 
+        display: block !important;
+        white-space: normal !important; /* Permite que se acomode */
+    }
+}
     .navbar {
         flex-direction: column; /* Apila el logo sobre el contador */
         height: auto;
@@ -407,5 +427,6 @@ h2 { font-size: 1.8rem; margin-bottom: 20px; }
 
 
 #inicio, #eventos, #ubicacion { scroll-margin-top: 120px; }
+
 
 
