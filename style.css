@@ -358,75 +358,76 @@ h2 { font-size: 1.8rem; margin-bottom: 20px; }
 /* --- 11. RESPONSIVE --- */
 /* --- AJUSTE DEFINITIVO PARA CELULAR --- */
 @media (max-width: 600px) {
-    /* ... otros estilos del celu ... */
 
-    .dress-card {
-        padding: 20px 10px !important; /* Menos espacio interno para que el texto quepa */
-        width: 95%; /* Que la carta ocupe casi todo el ancho del celu */
-    }
-
-    .dress-type {
-        font-size: 1.4rem !important; /* Más chico para que entre en el celu */
-        line-height: 1.2 !important;
-        display: block !important;
-    }
-
-    /* Esto asegura que el paréntesis no se corte en el celular */
-    .dress-type span, .dress-type small {
-        font-size: 1rem !important; 
-        display: block !important;
-        white-space: normal !important; /* Permite que se acomode */
-    }
-}
+    /* --- NAVEGACIÓN --- */
     .navbar {
-        flex-direction: column; /* Apila el logo sobre el contador */
+        flex-direction: column;
         height: auto;
         padding: 15px 0;
-    }
-
-    #countdown {
-        margin: 15px 0; /* Separa el reloj del logo */
-        justify-content: center;
     }
 
     .logo {
         margin-bottom: 10px;
     }
 
+    #countdown {
+        margin: 15px 0;
+        justify-content: center;
+    }
 
-    /* Asegura que el contenido principal no se mueva */
+    /* --- DRESS CODE (TU CARTA) --- */
+    .dress-card {
+        padding: 20px 15px !important; 
+        width: 90% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    .dress-type {
+        font-size: 1.5rem !important; /* Achicamos para que no se amontone */
+        line-height: 1.2 !important;
+        display: block !important;
+        margin-top: 10px !important;
+    }
+
+    /* Esto hace que el paréntesis baje y no se corte */
+    .dress-type span, .dress-type small {
+        font-size: 1.1rem !important; 
+        display: block !important;
+        margin-top: 5px !important;
+        white-space: normal !important;
+    }
+
+    /* --- OTROS AJUSTES --- */
     .main-header, .regalo-container, .dress-code-container {
         width: 100%;
         text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        box-sizing: border-box; /* Evita que el padding agrande el ancho */
-    }
-
-    .alias-box {
-        max-width: 90%;
-        padding: 15px 20px;
-    }
-
-    .alias-texto {
-        font-size: 1.6rem;
-    }
-    .galeria-pro {
-        grid-template-columns: 1fr; /* Una sola foto por fila solo en CELU */
-    }
-
-    .alias-texto {
-        font-size: 1.8rem; /* Un poco más chico en CELU */
+        padding: 20px 10px;
+        box-sizing: border-box;
     }
 
     .main-header h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem !important; /* Ajustado para que entre el nombre */
     }
-}
+
+    .alias-box {
+        max-width: 95% !important;
+        padding: 15px 10px !important;
+    }
+
+    .alias-texto {
+        font-size: 1.4rem !important; 
+    }
+
+    .galeria-pro {
+        grid-template-columns: 1fr !important; /* Una sola foto por fila */
+        gap: 15px;
+    }
 }
 
 
 #inicio, #eventos, #ubicacion { scroll-margin-top: 120px; }
+
 
 
 
