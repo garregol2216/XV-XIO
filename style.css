@@ -294,17 +294,25 @@ h2 { font-size: 1.8rem; margin-bottom: 20px; }
 }
 /* Usamos el nombre del contenedor padre para que el estilo tenga más prioridad */
 .dress-card .dress-type {
-    font-size: 1.5rem !important; /* El !important fuerza el cambio si algo lo bloquea */
-    line-height: 1.2 !important;
+    font-size: 1.8rem !important;    /* Tamaño para la línea principal */
     display: block !important;
-    margin-top: 10px !important;
-    letter-spacing: 1px !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+    line-height: 1.1 !important;     /* Espacio apretadito para que se vea como un solo bloque */
+    text-align: center !important;
     
-    /* Mantenemos tu efecto de brillo pero con el tamaño controlado */
+    /* Tu efecto de brillo */
     background: linear-gradient(to bottom, #ffffff, #bdc3c7, #e3e4e5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+}
+
+/* Esto aplicará un tamaño más chico específicamente al paréntesis */
+.dress-type span, .dress-type small {
+    font-size: 1.2rem !important;    /* Más chico para que entre en una línea */
+    display: block !important;       /* Fuerza a que el paréntesis baje */
+    margin-top: 5px;
+    opacity: 0.9;
 }
 
 /* --- 10. REGALO Y ALIAS (AGRANDADO) --- */
@@ -399,4 +407,5 @@ h2 { font-size: 1.8rem; margin-bottom: 20px; }
 
 
 #inicio, #eventos, #ubicacion { scroll-margin-top: 120px; }
+
 
