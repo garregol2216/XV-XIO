@@ -392,8 +392,41 @@ h2 { font-size: 1.8rem; margin-bottom: 20px; }
     .alias-texto { font-size: 1.3rem !important; }
 }
 
+/* --- ESTO VA AL FINAL DE TODO EL ARCHIVO --- */
+
+/* Ajuste para PC */
+.dress-card .dress-type span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    -webkit-text-fill-color: #bdc3c7; 
+}
+
+/* Ajuste para Celular */
+@media screen and (max-width: 600px) {
+    .dress-card {
+        padding: 20px 10px !important;
+        width: 90% !important;
+    }
+
+    .dress-card .dress-type {
+        font-size: 1.4rem !important; /* Achica el texto principal */
+        display: block !important;
+    }
+
+    .dress-card .dress-type span {
+        display: block !important;    /* ESTO lo tira abajo */
+        font-size: 1rem !important;    /* Achica el paréntesis */
+        margin-top: 5px !important;
+        -webkit-text-fill-color: #bdc3c7 !important;
+    }
+}
+
 
 #inicio, #eventos, #ubicacion { scroll-margin-top: 120px; }
+
+
+
 
 
 
