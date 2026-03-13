@@ -293,25 +293,26 @@ h2 { font-size: 1.8rem; margin-bottom: 20px; }
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
 }
 .dress-type {
-    font-size: 2.8rem;         /* Tamaño grande e imponente */
-    color: var(--plata-metalico);           /* Plata brillante de base */
-    text-transform: none;      /* QUITAMOS LAS MAYÚSCULAS */
-    letter-spacing: 2px;
-    margin-top: 20px;
+    font-size: 1.8rem;         /* Tamaño más equilibrado */
+    color: var(--plata-metalico);
+    text-transform: none;      
+    letter-spacing: 1px;       /* Reducido para que no se estire tanto */
+    margin-top: 15px;
     font-weight: 600;
+    line-height: 1.2;          /* Ajusta el espacio entre líneas */
     
     /* EFECTO PLATA BRILLANTE */
     background: linear-gradient(
         to bottom, 
-        #ffffff 0%,    /* Brillo máximo arriba */
-        #bdc3c7 50%,   /* Tono metálico medio */
-        #e3e4e5 100%   /* Reflejo abajo */
+        #ffffff 0%,    
+        #bdc3c7 50%,   
+        #e3e4e5 100%   
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    /* Sombra blanca para dar efecto de resplandor (Glow) */
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
+    /* Sombra blanca para dar efecto de resplandor */
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
 
 /* --- 10. REGALO Y ALIAS (AGRANDADO) --- */
@@ -403,5 +404,6 @@ h2 { font-size: 1.8rem; margin-bottom: 20px; }
     }
 }
 }
+
 
 #inicio, #eventos, #ubicacion { scroll-margin-top: 120px; }
